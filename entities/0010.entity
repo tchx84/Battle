@@ -1,0 +1,65 @@
+{
+    "game": {
+        "default": {
+            "actuators": [
+                "affects",
+                "collapses_t"
+            ],
+            "density": 1.0,
+            "dialogue": "",
+            "direction": "south",
+            "durability": 0,
+            "luminance": 0.0,
+            "name": "Explotion",
+            "radius": 1,
+            "rate": 1,
+            "recovery": 1.0,
+            "removable": true,
+            "stamina": 0,
+            "state": "idling",
+            "strength": 100,
+            "takeable": false,
+            "target_name": "",
+            "target_type": 0,
+            "usable": false,
+            "visible": true,
+            "weight": 0
+        }
+    },
+    "graphics": {
+        "default": {
+            "columns": 10,
+            "crop_x": 0,
+            "crop_y": 0,
+            "duration": 1.0,
+            "first_frame": 70,
+            "flip_x": false,
+            "flip_y": false,
+            "last_frame": 74,
+            "path": "assets/images/Tank Game/Tank Town V2.png",
+            "rotate": 0.0,
+            "rows": 12,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "tiles_x": 1,
+            "tiles_y": 1
+        },
+        "states": []
+    },
+    "id": 10,
+    "sound": {
+        "states": [
+            {
+                "name": "idling",
+                "sequence": {
+                    "delay": 1.0,
+                    "paths": [
+                        "assets/sounds/RandomSFX/stuff/Rocket/Impact.ogg"
+                    ],
+                    "timeout": 0.0
+                }
+            }
+        ]
+    },
+    "version": "0.6.0"
+}

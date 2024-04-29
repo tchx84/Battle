@@ -1,0 +1,491 @@
+{
+    "game": {
+        "default": {
+            "actuators": [
+                "takes",
+                "destroys"
+            ],
+            "density": 1.0,
+            "dialogue": "",
+            "direction": "south",
+            "durability": 100,
+            "luminance": 1.0,
+            "name": "player",
+            "radius": 0,
+            "rate": 0,
+            "recovery": 0.0,
+            "removable": false,
+            "stamina": 100,
+            "state": "idling",
+            "strength": 100,
+            "takeable": false,
+            "target_name": "",
+            "target_type": 0,
+            "usable": false,
+            "visible": true,
+            "weight": 100
+        }
+    },
+    "graphics": {
+        "default": {
+            "columns": 10,
+            "crop_x": 0,
+            "crop_y": 0,
+            "duration": 0.0,
+            "first_frame": 50,
+            "flip_x": false,
+            "flip_y": false,
+            "last_frame": 50,
+            "path": "assets/images/Tank Game/Tank Town V2.png",
+            "rotate": 0.0,
+            "rows": 12,
+            "scale_x": 1.0,
+            "scale_y": 1.0,
+            "tiles_x": 1,
+            "tiles_y": 1
+        },
+        "states": [
+            {
+                "directions": [
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 90.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "west"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 180.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "south"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 0.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "north"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 270.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "east"
+                    }
+                ],
+                "name": "using"
+            },
+            {
+                "directions": [
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 90.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "west"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 180.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "south"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 0.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "north"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 270.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "east"
+                    }
+                ],
+                "name": "destroyed"
+            },
+            {
+                "directions": [
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 90.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "west"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 180.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "south"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 0.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "north"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 79,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 79,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 270.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "east"
+                    }
+                ],
+                "name": "destroying"
+            },
+            {
+                "directions": [
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 90.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "west"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 180.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "south"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 0.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "north"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.0,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 50,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 270.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "east"
+                    }
+                ],
+                "name": "idling"
+            },
+            {
+                "directions": [
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.3,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 54,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 90.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "west"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.3,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 54,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 180.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "south"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.3,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 54,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 0.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "north"
+                    },
+                    {
+                        "animation": {
+                            "columns": 10,
+                            "crop_x": 0,
+                            "crop_y": 0,
+                            "duration": 0.3,
+                            "first_frame": 50,
+                            "flip_x": false,
+                            "flip_y": false,
+                            "last_frame": 54,
+                            "path": "assets/images/Tank Game/Tank Town V2.png",
+                            "rotate": 270.0,
+                            "rows": 12,
+                            "scale_x": 1.0,
+                            "scale_y": 1.0,
+                            "tiles_x": 1,
+                            "tiles_y": 1
+                        },
+                        "name": "east"
+                    }
+                ],
+                "name": "moving"
+            }
+        ]
+    },
+    "id": 1,
+    "sound": {
+        "states": [
+            {
+                "name": "moving",
+                "sequence": {
+                    "delay": 0.0,
+                    "paths": [
+                        "assets/sounds/Engine-loop heavy vehicle/engine_heavy_loop.ogg"
+                    ],
+                    "timeout": 0.0
+                }
+            }
+        ]
+    },
+    "version": "0.6.0"
+}
